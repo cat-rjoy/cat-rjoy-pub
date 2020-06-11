@@ -69,7 +69,7 @@ function Set-RenameTags {
 
  .Example
    # Show a default display of this month.
-   Set-RenameTags -tagName "Created By" -oldTagValue "Ron Joy" -newTagValue "ron_joy@dellteam.com" 
+   Set-RenameTags -tagName "Created By" -oldTagValue "Ron Joy" -newTagValue "ron_joy@github.com" 
 #>
 function Set-RenameTagValues {
     param (
