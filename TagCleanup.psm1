@@ -143,9 +143,6 @@ function Set-RGTagsToResources {
     }
 }
 
-# Set-RenameTagValues -oldTagValue "Dev (PoC)" -newTagValue "Dev"
-
-
 Export-ModuleMember -Function Set-RenameTagNames
 Export-ModuleMember -Function Set-RenameTagValues
 Export-ModuleMember -Function Set-RGTagsToResources
