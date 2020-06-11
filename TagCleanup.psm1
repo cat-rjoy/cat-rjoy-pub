@@ -1,6 +1,6 @@
 <#
  .Synopsis
-  Rename a Tag. Connect via Connect-AzAccount to connect to your Azure Tenant.
+  Rename a tag name on all resources in a subscription. Connect via Connect-AzAccount to connect to your Azure Tenant.
 
  .Description
   Rename is case sensitive.
@@ -15,7 +15,7 @@
    # Show a default display of this month.
    Set-RenameTags -tagName "Created By" -newTagName "createdBy"
 #>
-function Set-RenameTags {
+function Set-RenameTagNames {
     param (
         [Parameter(Mandatory = $true)]
         [string] $tagName,
@@ -146,6 +146,6 @@ function Set-RGTagsToResources {
 # Set-RenameTagValues -oldTagValue "Dev (PoC)" -newTagValue "Dev"
 
 
-Export-ModuleMember -Function Set-RenameTags
+Export-ModuleMember -Function Set-RenameTagNames
 Export-ModuleMember -Function Set-RenameTagValues
 Export-ModuleMember -Function Set-RGTagsToResources
